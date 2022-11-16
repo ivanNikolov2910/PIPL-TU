@@ -1,12 +1,14 @@
 package lectures.lec6.orders;
 
+import constants.Constants;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
 
 public class Order {
-    private static final String FOLDER_PATH = System.getProperty("user.dir") + "\\src\\lectures\\lec6\\orders\\receipts\\";
+    private static final String FOLDER_PATH = Constants.SRC_DIR + "\\lectures\\lec6\\orders\\receipts\\";
 
     private final String orderID;
     private HashMap<Product, Integer> products;

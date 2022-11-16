@@ -1,14 +1,16 @@
 package lectures.lec6;
 
+import constants.Constants;
+
 import java.io.*;
 
 public class CopyFile {
-    private static final String SRC_NAME = System.getProperty("user.dir") + "\\src\\lectures\\lec6\\src.txt";
-    private static final String OUT_NAME = System.getProperty("user.dir") + "\\src\\lectures\\lec6\\out.txt";
+    private static final String SRC_NAME =  Constants.SRC_DIR + "\\lectures\\lec6\\src.txt";
+    private static final String OUT_NAME = Constants.SRC_DIR + "\\lectures\\lec6\\out.txt";
 
     public static void main(String[] args) {
-        BufferedReader inputStream = null;
-        PrintWriter outputStream = null;
+        BufferedReader inputStream;
+        PrintWriter outputStream;
         try {
             inputStream = new BufferedReader(new FileReader(SRC_NAME));
             outputStream = new PrintWriter(new FileWriter(OUT_NAME));
