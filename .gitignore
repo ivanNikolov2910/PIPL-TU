@@ -27,3 +27,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Text files ###
+*.txt
+
+### Private package fot colleagues ###
+!**/src/private_col
