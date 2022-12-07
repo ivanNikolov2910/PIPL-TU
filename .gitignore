@@ -32,4 +32,4 @@ bin/
 *.txt
 
 ### Private package fot colleagues ###
-!**/src/private_col
+src/private_col/
