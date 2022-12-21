@@ -30,7 +30,6 @@ public class ClientResolver implements Runnable {
 
             writer.println("Enter username and password: ");
             String[] input = reader.readLine().split(" ");
-
             String username = input[0];
             String password = input[1];
             if (username.equals("admin") && password.equals("admin")) {
